@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
+  </head>
+
+  <body>
+    
+    <a-scene>
+      
+      <a-assets>
+        <a-asset-item
+          id="skin"
+          response-type="arraybuffer"
+          src="https://cdn.glitch.global/465d75dc-a841-429e-a3b4-17473f1d10f9/scene%20(10).glb?v=1667746152428"
+        ></a-asset-item>
+        
+      </a-assets>
+
+      <a-entity gltf-model="#skin" scale=".5 .5 .5"></a-entity>
+      
+    </a-scene>
+    
+  </body>
+  
+</html>
