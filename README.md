@@ -1,4 +1,4 @@
-# EduVeRse (without Wix!)
+# [EduVeRse (without Wix!)](https://eduverse.glitch.me)
 
 **Built with [A-Frame](https://aframe.io)**, a web framework for building XR experiences!
 
