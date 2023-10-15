@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Merienda:wght@800&display=swap" rel="stylesheet">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Rowdies&display=swap');
+    </style>
+    <nav>
+      <ul id="ulnavbar">
+        <li>
+          <a href="about.html">About</a>
+        </li>
+        <li>
+          <a href="explore.html">Explore</a>
+        </li>
+        <li>
+          <a href="upload.html">Upload</a>
+        </li>
+      </ul>
+      
+    </nav>
+    
+    <title>Ashley's Portfolio</title>
+    <meta charset="utf-8" />
+	  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	  <!-- link the webpage's stylesheet -->
+	  <link rel="stylesheet" href="/style.css" />
+
+	  <!-- link the webpage's JavaScript file -->
+	  <script src="/script.js" defer></script>
+
+  </head>
+  
+  <body>
+    
+    <header>
+    <h1 id="eduverse" class="welcome">eduVeRse</h1>
+      <h4 style="color: black"; class="explore">free, cross-platform, webXR-powered immersive education</h4>
+      
+    <img class="stock" id="ashleyvr" src="https://cdn.glitch.global/e8db89b4-eaff-4a42-bd1d-2ac903b83734/vredimg.jpg?v=1685545530310" alt="A young student wearing a VR headset!" style="border-radius: 50%;"/>
+
+      <script>
+
+        let i = 0;
+        
+      document.getElementById("ashleyvr").onclick = function() {transformsite()};
+
+
+      function transformsite() {
+        if (document.body.style.backgroundColor != "black") {
+          document.body.style.backgroundColor = "black";
+        document.getElementById("ulnavbar").style.backgroundColor = "black";
+        document.getElementsByTagName('H1')[0].style.color = "black";
+        document.getElementById("mylinkedin").style.display = "none";
+        document.getElementById("classrooms").style.display = "none";
+        document.getElementById("carvr").style.display = "none";
+        document.getElementById("mygithub").style.display = "none";
+            
+
+           while (i == 0) {
+             var mybutton = document.createElement("BUTTON");
+             var buttontext = document.createTextNode("ENTER");
+             mybutton.id = "enterbutton";
+             mybutton.appendChild(buttontext);
+             document.body.appendChild(mybutton);
+              i += 1;
+           }
+          
+        document.getElementById("enterbutton").style.visibility = "visible";
+          
+        }
+        
+        else {
+          document.body.style.backgroundColor = "#87dfff";
+        document.getElementById("ulnavbar").style.backgroundColor = "#87dfff";
+        document.getElementsByTagName('H1')[0].style.color = "black";
+        document.getElementById("mylinkedin").style.display = "initial";
+        document.getElementById("classrooms").style.display = "initial";
+        document.getElementById("carvr").style.display = "initial";
+        document.getElementById("mygithub").style.display = "initial";
+          document.getElementById("enterbutton").style.visibility = "hidden";
+          
+        }
+
+        document.getElementById("enterbutton").onclick = function() {buttonclick()};
+        
+        function buttonclick() {
+        window.location.href = "https://ashleyinvr.glitch.me";
+    }
+      }
+        
+        
+       
+    </script>
+      
+    </header>
+
+
+    
+    <main>
+    <a href="subjects.html"> <img id="explore1" class="big" src="https://cdn.glitch.global/e8db89b4-eaff-4a42-bd1d-2ac903b83734/26a1f8_0574173b4a924c10bf91a793761f42dc~mv2.jpg.webp?v=1685548147339" style="border-radius: 50%;"/></a>
+
+    <a href="classrooms.html"> <img id="explore2" class="big" src="https://cdn.glitch.global/e8db89b4-eaff-4a42-bd1d-2ac903b83734/Image%205-31-23%20at%208.11%20AM.jpg?v=1685545918731" style="border-radius: 50%;"/></a>
+
+    <a href="labs.html"> <img id="explore3" class="big" src="https://cdn.glitch.global/e8db89b4-eaff-4a42-bd1d-2ac903b83734/Screen%20Shot%202023-05-31%20at%207.38.23%20PM.png?v=1685587115896" style="border-radius: 50%;"/></a>
+
+    <a href="institutions.html"> <img id="explore4" class="big" src="https://cdn.glitch.global/e8db89b4-eaff-4a42-bd1d-2ac903b83734/Screen%20Shot%202023-05-31%20at%207.42.04%20PM.png?v=1685587333778" style="border-radius: 50%;"/></a>
+      
+
+    </main>
+    
+    <div></div>
+
+    <footer>
+      <h5>
+       Made with ❤︎ by Ashley Neall © 2023
+    </h5>
+</footer>
+    
+  </body>
+</html>

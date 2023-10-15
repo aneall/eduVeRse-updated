@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
+  </head>
+
+  <body>
+    
+    <a-scene>
+      
+      <a-assets>
+        <a-asset-item
+          id="c"
+          response-type="arraybuffer"
+          src="https://cdn.glitch.global/e8db89b4-eaff-4a42-bd1d-2ac903b83734/cell2.glb?v=1685728629383"
+        ></a-asset-item>
+        
+      </a-assets>
+
+      <a-entity gltf-model="#c" scale="1 1 1" position="0 -1 -3" rotation="0 -90 0"></a-entity>
+      
+    </a-scene>
+    
+  </body>
+  
+</html>
